@@ -94,3 +94,19 @@ def collatz(x):
             x = (3*x) +1
         array.append(x)
     return len(array)
+
+# Factorial - returns factorial for n'th digit
+def factorial(n):
+    x = 1
+    for i in range(n):
+        i += 1
+        x = x * i
+    return x
+
+# Finds sum of digits
+def sum_of_digits(n):
+    digits = str(n)
+    total_sum = 0
+    for i in range(len(digits)):
+        total_sum += int(digits[i])
+    return total_sum
