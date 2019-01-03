@@ -76,3 +76,10 @@ def pythagorean_triplet(a,b,c):
         return True
     else:
         return False
+
+# Generate triangle number for the n'th digit
+def triangle_number(n):
+    x = 0
+    for i in range(n+1):
+        x += i
+    return x
