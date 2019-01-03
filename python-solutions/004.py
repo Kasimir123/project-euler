@@ -1,4 +1,4 @@
-# Solution for Project Euler Problem 3
+# Solution for Project Euler Problem 4
 
 # Import Functions
 from functions import *
@@ -22,8 +22,6 @@ while n >= x:
         n = largest_digit_number * largest_digit_number_two
     largest_digit_number_two = 999
     largest_digit_number -= 1
-
-
 
 palindrome.sort()    
 print(palindrome)

@@ -43,3 +43,10 @@ def check_if_palindrome(n):
         return True
     else:
         return False
+
+# Checks if a number can be divided by another number without a remainder
+def check_remainder(n, divider):
+    if n % divider == 0:
+        return True
+    else: 
+        return False
