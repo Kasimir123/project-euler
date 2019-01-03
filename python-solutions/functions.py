@@ -35,3 +35,11 @@ def check_if_prime(n):
     elif n in ["4", "6", "8", "9", "10"]:
         return False
     return True
+
+# Check if number is a palindromic number
+def check_if_palindrome(n):
+    x = str(n)[::-1]
+    if n == int(x):
+        return True
+    else:
+        return False
