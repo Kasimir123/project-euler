@@ -1,4 +1,4 @@
-# Solution for Project Euler Problem 12
+# Solution for Project Euler Problem 13
 
 # Import Functions
 from functions import *
