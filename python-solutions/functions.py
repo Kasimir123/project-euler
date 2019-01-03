@@ -26,13 +26,13 @@ def fibonacci_generation(max_digit):
 def check_if_prime(n):
     if n > 10:
         x = n % 10
-        if x in ["0", "2", "4", "5", "6", "8"] or n % 3 == 0:
+        if x in [0, 2, 4, 5, 6, 8] or n % 3 == 0:
             return False
         else:
             factors = find_factors(n)
             if len(factors) != 2:
                 return False
-    elif n in ["4", "6", "8", "9", "10"]:
+    elif n in [4, 6, 8, 9, 10]:
         return False
     return True
 
@@ -50,3 +50,19 @@ def check_remainder(n, divider):
         return True
     else: 
         return False
+
+# Sum of Squares for n'th digit
+def sum_of_squares(n):
+    total_sum = 0
+    while n > 0:
+        total_sum += n ** 2
+        n -= 1
+    return total_sum
+
+# Square of sum till n'th digit
+def square_of_sums(n):
+    total_sum = 0
+    while n > 0:
+        total_sum += n
+        n -= 1
+    return total_sum ** 2
