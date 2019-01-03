@@ -66,3 +66,13 @@ def square_of_sums(n):
         total_sum += n
         n -= 1
     return total_sum ** 2
+
+# Check if Pythagorean triplet
+def pythagorean_triplet(a,b,c):
+    A = a ** 2
+    B = b ** 2
+    C = c ** 2
+    if A + B == C:
+        return True
+    else:
+        return False
